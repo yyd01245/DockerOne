@@ -183,14 +183,7 @@ echo -e "
 			docker run -d --restart always --privileged \\
 			-v /docker/strongswan:/key \\
 			--network=host \\
-			-e VPN_USER=[jiobxn] \\
-			-e VPN_PASS=<123456> \\
-			-e VPN_PSK=[jiobxn.com] \\
-			-e P12_PASS=[jiobxn.com] \\
-			-e SERVER_CN=<SERVER_IP> \\
-			-e CLIENT_CN=["strongSwan VPN"] \\
-			-e CA_CN=["strongSwan CA"] \\
-			-e IP_RANGE=[10.11.0] \\
+			-e VPN_PASS=123456 \\
 			--hostname strongswan \\
 			--name strongswan strongswan
 	"
